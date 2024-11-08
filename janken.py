@@ -13,6 +13,20 @@ for ken in range(1, 4):
         user_hand = pc1[user_jan]
         print(f'あなたの手：{user_hand}')
         print(f'コンピューターの手：{pc_jan}')
+        
+        if user_hand == pc_jan:
+            print("引き分けです")
+            continue
+        elif (user_hand == "グー" and pc_jan == "チョキ") or \
+             (user_hand == "チョキ" and pc_jan == "パー") or \
+             (user_hand == "パー" and pc_jan == "グー"):
+            print("あなたの勝ちです")
+            cnt2 += 1
+            break  
+        else:
+            print("コンピューターの勝ちです")
+            cnt1 += 1
+            break  
 
 # 勝敗数
 
