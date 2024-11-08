@@ -10,7 +10,9 @@ for ken in range(1, 4):
         pc_jan = random.choice(pc1)  
         user_jan = int(input(f'----- ラウンド {ken} -----\n1.グー 2.チョキ 3.パー\nあなたの手を選択してください。>')) - 1
 
-s
+        user_hand = pc1[user_jan]
+        print(f'あなたの手：{user_hand}')
+        print(f'コンピューターの手：{pc_jan}')
 
 # 勝敗数
 
